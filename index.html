@@ -8,25 +8,34 @@
 <body>
     <form action="" method="post">
         <p>Digite seu nome: </p>
-        <input type="text" name="nome" placeholder="Nome e Sobrenome: ">
-        <p>Digite seu email: </p>
-        <input type="email" name="email" placeholder="e-mail" value="@gmail.com">
+        <input type="text" name="nome" placeholder="Nome e Sobrenome:" required>
         <p>Digite sua data de nascimento: </p>
         <input type="number" name="data" >
+        <p>Digite seu email: </p>
+        <input type="email" name="email" placeholder="e-mail" value="@gmail.com">
+        <p>Digite seu número de telefone: </p>
+        <input type="number" name="telefone" >
         <p>Está trabalhando atualmente?</p>
         <input type="radio" name="trabalho" value="Sim"> Sim
         <input type="radio" name="trabalho" value="Não"> Não
-        <select name="1" id="">
-            <option value="1">1</option>
+        <p>Escolha um idioma</p>
+        <select name="idioma" id="">
+            <option value="Português(BR)">1</option>
             <option value="2">1</option>
             <option value="3">1</option>
             <option value="4">1</option>
             <option value="5">1</option>
             <option value="6">1</option>
         </select>
-
         <br>
         <input type="checkbox" name="notificações" checked> Aceito receber as notificações
+
+
+        <br>
+        <textarea name="feedbacks" id=""></textarea>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reiniciar o formulário</button>
+
     </form>
 </body>
 </html>
